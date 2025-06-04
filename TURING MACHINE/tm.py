@@ -1,4 +1,4 @@
-def is_balanced_ab_turing(tape_input, debug=False):
+def is_balanced_ab(tape_input, debug=False):
     tape = list(tape_input) + ['_']
     head = 0
     state = 'START'
@@ -68,5 +68,5 @@ for line in lines:
     if not line.strip():
         print("Nu este echilibrat")
         continue
-    result = is_balanced_ab_turing(line, debug=False)
+    result = is_balanced_ab(line, debug=False)
     print(f"{line:10} -> {'Echilibrat' if result else 'Nu este echilibrat'}")
